@@ -3,6 +3,12 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  list-style: none;
+
+}
+
+ul {
+  list-style: none;
 }
 
 .logo {
