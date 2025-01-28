@@ -11,13 +11,25 @@ import CreateTodoButton from './components/CreateTodoButton'
 function App() {
   const [count, setCount] = useState(0)
 
+  const defaultToDos = [
+    {text: "Hacer la compra", completed: false},
+    {text: "Asentar Javascript", completed: false},
+    {text: "Poner la Roomba", completed: true},
+    {text: "Ir al gym", completed: true},
+  ]
+    
+
   return (
     <>
-    <TodoCounter/>
+    <TodoCounter completed={3} total={5}/>
     <TodoSearch/>
 
     <TodoList>
-      <TodoItem/>
+      {defaultToDos.map(toDo => (
+        <TodoItem 
+        text={toDo.text}
+        completed={toDo.completed}/>
+      ))}
     </TodoList>
 
     <CreateTodoButton/>

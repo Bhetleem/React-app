@@ -1,8 +1,8 @@
-import TodoItem from "./TodoItem";
-
-function TodoList(){
+function TodoList(props){
     return(
-        <TodoItem/>
+        <ul>
+            {props.children}
+        </ul>
     );
   }
 
