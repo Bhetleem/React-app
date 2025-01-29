@@ -7,6 +7,8 @@
 }
 
 aside {
+  display: flex;
+  flex-direction: row;
 
 }
 
