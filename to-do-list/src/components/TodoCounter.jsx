@@ -1,6 +1,6 @@
 function TodoCounter({total,  completed}){
     return(
-    <h1>Has completado {completed} de {total} to dos</h1>
+    <h1 className="title">Completed {completed} of {total} tasks</h1>
     );
   }
 
